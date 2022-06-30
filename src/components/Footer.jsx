@@ -22,7 +22,7 @@ const FooterBtn = styled.button `
         display: none;
     `}
 `
-const Footer = ({isVisiable, event, setEvent, changeState}) => {
+const Footer = ({setVisiable, isVisiable, event, setEvent, changeState}) => {
     const {date, time} = {... event};
     
     const goToToday = ()=>{
@@ -38,10 +38,11 @@ const Footer = ({isVisiable, event, setEvent, changeState}) => {
         const eventsTime = window.localStorage.getItem(date);
        
         if(eventsTime !== null) {
-          //  console.log(eventsTime.split(', '))
             const updateEvents = eventsTime.split(',').filter(el => parseInt(el, 10) !== parseInt(time, 10));
             setEvent("")
             window.localStorage.setItem(date, updateEvents);
+            setVisiable(false)
+            
         }
     }
 

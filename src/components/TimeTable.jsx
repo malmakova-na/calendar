@@ -52,7 +52,7 @@ const TimeTable = ({state, changeState, setVisiable, setEvent}) => {
                week.map((day, index) => {
                    const data = `${state["year"]}-${state["month"]}-${day}`;
                     return <Column key={day+index}>
-                        <TimeCells setSel={setSel} selectedEvent={selectedEvent}  
+                            <TimeCells setSel={setSel} selectedEvent={selectedEvent}  
                                     setEvent={setEvent}   setVisiable={setVisiable}
                                     day={day} day_index={index} data={data} state={state} 
                                     changeState={changeState}/>

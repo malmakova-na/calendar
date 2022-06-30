@@ -62,7 +62,7 @@ function App() {
         <Content state={state} changeState={changeState}>
           <TimeTable state={state} changeState={changeState} setVisiable={setVisiable} setEvent={setEvent}/>
         </Content>
-        <Footer isVisiable={isVisiable} event={event} setEvent={setEvent} changeState={changeState}></Footer>
+        <Footer setVisiable={setVisiable} isVisiable={isVisiable} event={event} setEvent={setEvent} changeState={changeState}></Footer>
       </AppContent>
     </AppWrapper>
   );
