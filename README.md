@@ -4,7 +4,7 @@ In this application you can add events to the calendar.
 ## Demo
 You can try the demo version of the app [here](https://calendar-murex.vercel.app/)
 ## Functionality
-You can add event by date and time and  delete them. 
+You can add event by date and time. 
 
 ## How to start
  1. Download the repository
