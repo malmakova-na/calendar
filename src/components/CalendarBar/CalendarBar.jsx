@@ -129,7 +129,7 @@ const Bar = ({state, changeState}) => {
         };
         const mnth = month - 1;
         const prevMnthDuration = getMonthDur(mnth, year);
-        if(day <= 0 || week[0] <=0) { 
+        if(prevDay <= 0 || week[0] <=0) { 
             params["day"] = prevMnthDuration;
             if(month <= 0) {
                 params["month"] = 12;
